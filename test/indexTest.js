@@ -37,6 +37,8 @@ describe( 'index.js', () => {
 
     it( 'logs each number when counting down, starting from the number provided', () => {
       countDown( 4 );
+      // expect( spy.callCount, "Expected countDown(4) to invoke 5 console.logs" )
+      //   .to.eq( 5 );
       expect( spy.calledWithExactly( 4 ), "Expected countDown(4) to log 4 first" )
         .to.be.true;
       expect( spy.calledWithExactly( 3 ), "Expected countDown(4) to log 3 after 4" )
